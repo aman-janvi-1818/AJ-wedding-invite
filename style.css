@@ -241,7 +241,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
     inset:0 !important;
     width:100% !important;
     height:100% !important;
-    background-position:78% center !important;
+    background-position:82% center !important;
   }
   .hero__veil{
     background:
@@ -253,7 +253,18 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
       ) !important;
   }
 }
+/* Extra adjustment for narrow mobile screens */
+@media (max-width:600px){
+  .hero__photo{
+    background-position:82% center !important;
+  }
+}
 
+@media (max-width:390px){
+  .hero__photo{
+    background-position:86% center !important;
+  }
+}
 /* --- Final wedding schedule + family styling --- */
 .events__days--custom .day{
   position:relative;
