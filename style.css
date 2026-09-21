@@ -163,7 +163,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
   }
   .hero__content .ganesh{font-size:30px;margin-bottom:12px}
   .hero__content .eyebrow{max-width:100%;font-size:9px;line-height:1.5;letter-spacing:.14em}
-  .hero h1{font-size:72px;margin:17px 0 17px;white-space:normal;line-height:.82}
+  .hero h1{font-size:64px;margin:17px 0 17px;white-space:normal;line-height:.82}
   .hero__date{font-size:13px;letter-spacing:.15em}
   .hero__venue{font-size:17px;margin-top:10px}
   .hero__venue small{font-size:12px}
@@ -241,7 +241,7 @@ section{position:relative}.story,.events,.family,.gallery,.venue,.countdown{padd
     inset:0 !important;
     width:100% !important;
     height:100% !important;
-    background-position:center center !important;
+    background-position:78% center !important;
   }
   .hero__veil{
     background:
