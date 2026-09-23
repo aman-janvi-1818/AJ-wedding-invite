@@ -112,3 +112,15 @@ if(savedLanguage && translations[savedLanguage]){
   languageGate.classList.remove("hide");
   preloader.classList.add("hide-preloader");
 }
+/* =========================================
+   DRESS CODE REVEAL
+   ========================================= */
+
+const dressCodeButton = document.getElementById("dressCodeReveal");
+const dressCodeCard = document.querySelector(".dress-code-card");
+
+if (dressCodeButton && dressCodeCard) {
+  dressCodeButton.addEventListener("click", function () {
+    dressCodeCard.classList.add("revealed");
+  });
+}
