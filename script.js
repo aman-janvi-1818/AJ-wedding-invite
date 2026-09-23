@@ -141,14 +141,33 @@ if(savedLanguage && translations[savedLanguage]){
   preloader.classList.add("hide-preloader");
 }
 /* =========================================
-   DRESS CODE REVEAL
+   DRESS CODE REVEAL + ZOOM
    ========================================= */
 
 const dressCodeButton = document.getElementById("dressCodeReveal");
 const dressCodeCard = document.querySelector(".dress-code-card");
+const dressCodeImage = document.getElementById("dressCodeImage");
 
 if (dressCodeButton && dressCodeCard) {
+
   dressCodeButton.addEventListener("click", function () {
     dressCodeCard.classList.add("revealed");
   });
+
+}
+
+if (dressCodeImage && dressCodeCard && lightbox && lightboxImg) {
+
+  dressCodeImage.addEventListener("click", function () {
+
+    if (!dressCodeCard.classList.contains("revealed")) return;
+
+    lightboxImg.src = dressCodeImage.src;
+    lightboxImg.alt = dressCodeImage.alt;
+
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+
+  });
+
 }
