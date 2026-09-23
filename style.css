@@ -1452,16 +1452,16 @@ body[data-language="hi"] .janvi-family-layout .janvi-family-person small {
   pointer-events: none;
   transform: translate(-50%, -50%) scale(.92);
 }
-
 @media(max-width:700px) {
 
   .dress-code {
-    padding: 70px 16px;
+    padding: 35px 8px 70px;
   }
 
   .dress-code-card {
-    margin-top: 30px;
-    border-radius: 12px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
   }
 
   .dress-code-button {
