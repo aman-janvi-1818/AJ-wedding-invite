@@ -30,6 +30,34 @@ function setLanguage(lang){
   const dict = translations[lang] || translations.en;
   document.documentElement.lang = lang === "hi" ? "hi" : "en";
   document.body.dataset.language = lang;
+    const dressCodeImage = document.getElementById("dressCodeImage");
+  const dressCodeButton = document.getElementById("dressCodeReveal");
+  const dressCodeEyebrow = document.querySelector("[data-dress-eyebrow]");
+  const dressCodeTitle = document.querySelector("[data-dress-title]");
+
+  if (dressCodeImage) {
+    dressCodeImage.src = lang === "hi"
+      ? "dress-code-hindi.png"
+      : "dress-code-english.png";
+  }
+
+  if (dressCodeEyebrow) {
+    dressCodeEyebrow.textContent = lang === "hi"
+      ? "ड्रेस कोड"
+      : "THE DRESS CODE";
+  }
+
+  if (dressCodeTitle) {
+    dressCodeTitle.textContent = lang === "hi"
+      ? "क्या पहनें"
+      : "What to wear";
+  }
+
+  if (dressCodeButton) {
+    dressCodeButton.textContent = lang === "hi"
+      ? "✨ ड्रेस कोड देखें"
+      : "✨ Tap for Dress Codes";
+  }
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const key=el.dataset.i18n;
     if(dict[key] !== undefined) el.textContent=dict[key];
