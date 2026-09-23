@@ -1471,15 +1471,7 @@ body[data-language="hi"] .janvi-family-layout .janvi-family-person small {
   }
 }
 /* DRESS CODE - FINAL BACKGROUND + SPACING */
-
 .dress-code {
   padding: 35px 24px 100px;
-  background-color: #063d2f !important;
-  background-image:
-    radial-gradient(
-      circle,
-      rgba(232,198,132,.22) 1px,
-      transparent 1.5px
-    ) !important;
-  background-size: 52px 52px !important;
+  text-align: center;
 }
